@@ -1,0 +1,71 @@
+<mvc:View controllerName="app.firstjsonmodel.controller.DetailForm"
+
+    xmlns:mvc="sap.ui.core.mvc"
+     xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m">
+    
+    <Page title="{i18n>title1}"  showNavButton="true" navButtonPress="onPressToView1">
+   
+      <content>
+    <Table class="sapUiSizeCompact" id="table2" items="{navModel>/id}" 
+    includeItemInSelection="true" >
+        <columns>
+            <Column >
+            <Label text="EMP ID"></Label>
+            </Column>
+             <Column >
+            <Label text="EMP NAME"></Label>
+            </Column>
+             <!-- <Column >
+            <Label text="EMPCOMPANYNAME"></Label>
+            </Column>
+             <Column >
+            <Label text="EMP GENDER"></Label>
+            </Column>
+             <Column >
+            <Label text="EMP STATE"></Label>
+            </Column> -->
+        </columns>
+            
+        <items>
+        
+            <ColumnListItem  >
+            <cells>
+             <Text text="{navModel>EMPID}"></Text>
+                <Text text="{navModel>EMPNAME}"></Text>
+                <!-- <Text text="{navModel>COMPANY}"></Text>
+                <Text text="{navModel>EMPGENDER}"></Text>
+                <Text text="{navModel>EMPSTATE}"></Text> -->
+                </cells>
+               
+
+            </ColumnListItem>
+        </items>
+    </Table>
+      </content>
+
+     <f:SimpleForm  editable="true">
+        <f:content>
+            <Label text="EMP ID"></Label>
+            <Text text="{navModel>/id/EMPID}" />
+            
+             <Label text="EMP NAME"></Label>
+            <Text text="{navModel>/id/EMPNAME}"></Text>
+             <Label text="EMP COMPANY"></Label>
+            <Text text="{navModel>/id/COMPANY}"></Text>
+             <Label text="EMP GENDER"></Label>
+            <Text text="{navModel>/id/EMPGENDER}"></Text>
+             <Label text="EMP STATE"></Label>
+            <Text text="{navModel>/id/EMPSTATE}"></Text>
+
+        </f:content>
+
+    </f:SimpleForm>
+   
+  
+    
+
+    
+    
+</Page>
+</mvc:View>

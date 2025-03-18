@@ -1,0 +1,47 @@
+<mvc:View controllerName="app.firstjsonmodel.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"  
+    
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+    <Table class="sapUiSizeCompact" id="table1" items="{madhuModel>/empData}" 
+    includeItemInSelection="true" selectionChange="onSelectionChange"  mode="SingleSelectLeft">
+        <columns>
+            <Column >
+            <Label text="EMP ID"></Label>
+            </Column>
+             <Column >
+            <Label text="EMP NAME"></Label>
+            </Column>
+             <Column >
+            <Label text="EMPCOMPANYNAME"></Label>
+            </Column>
+             <Column >
+            <Label text="EMP GENDER"></Label>
+            </Column>
+             <Column >
+            <Label text="EMP STATE"></Label>
+            </Column>
+        </columns>
+            
+        <items>
+        
+            <ColumnListItem press="onPress" type="Navigation" >
+            <cells>
+             <Text text="{madhuModel>EMPID}"></Text>
+                <Text text="{madhuModel>EMPNAME}"></Text>
+                <Text text="{madhuModel>COMPANY}"></Text>
+                <Text text="{madhuModel>EMPGENDER}"></Text>
+                <Text text="{madhuModel>EMPSTATE}"></Text>
+                </cells>
+               
+
+            </ColumnListItem>
+        </items>
+    </Table>
+        
+        
+    </content>
+    
+    </Page>
+</mvc:View>

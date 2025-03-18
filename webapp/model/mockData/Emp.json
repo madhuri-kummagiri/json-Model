@@ -1,0 +1,38 @@
+{
+    "empData":[
+        {
+            "EMPID":"1001",
+            "EMPNAME":"Madhuri",
+            "COMPANY":"Capgemini",
+            "EMPGENDER":"Female",
+            "EMPSTATE":"Andra Pradesh"
+       },
+       {
+           "EMPID":"1002",
+           "EMPNAME":"Vamsi",
+           "COMPANY":"Accencture",
+           "EMPGENDER":"male",
+           "EMPSTATE":"Andra Pradesh"
+      }, {
+       "EMPID":"1003",
+       "EMPNAME":"Revanth",
+       "COMPANY":"IBM",
+       "EMPGENDER":"male",
+       "EMPSTATE":"Karnataka"
+   },
+   {
+       "EMPID":"1004",
+       "EMPNAME":"Jansi",
+       "COMPANY":"Delloite",
+       "EMPGENDER":"Female",
+       "EMPSTATE":"Andra Pradesh"
+   },
+   {
+       "EMPID":"1005",
+       "EMPNAME":"Bhagya",
+       "COMPANY":"Nutanics",
+       "EMPGENDER":"Female",
+       "EMPSTATE":"Andra Pradesh"
+   }
+]
+}
