@@ -16,14 +16,14 @@ sap.ui.define([
         _onMatched:function(oEvent){
             var selectedArguments=oEvent.getParameter("arguments").id;
             var selecredRecord=JSON.parse(selectedArguments);
-            var obj={
-                id:selecredRecord
-            };
+            // var obj={
+            //     id:selecredRecord
+            // };
             
-            var navigationModel=new JSONModel(obj);
+            var navigationModel=new JSONModel(selecredRecord);
 
-            navigationModel.setData(obj);
-            this.getView().setModel(navigationModel,"navModel");
+            navigationModel.setData(selecredRecord);
+            this.getView().setModel(navigationModel,"madhuModel");
             console.log(navigationModel);
 
         },

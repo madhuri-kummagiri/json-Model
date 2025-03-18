@@ -27,9 +27,14 @@ sap.ui.define([
                     return c.getObject();
                 });
             }
-            var selectedItem=JSON.stringify(items);
+            var x = items[0]
+            var selectedItem=JSON.stringify(x);
             console.log(selectedItem)
             this.onPress(selectedItem);
+            
+ 
+          
+         
             // var oRouter=sap.ui.core.UIComponent.getRouterFor(this);
             // oRouter.navTo("DetailForm",{
             //     id:selectedItem
